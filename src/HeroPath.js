@@ -4,10 +4,16 @@ import HeroCard from './HeroCard';
 
 
 class HeroPath extends Component {
+  constructor(props) {
+    super();
+    this.state = {
+      cards: props.cards
+    };
+  }
 
-  renderNestedCards(props) {
-    return this.props.cards
-      .filter(card => card.shape === "nested")
+  renderStateCards(rank) {
+    return this.state.cards
+      .filter(card => card.priority <= rank)
       .map((card) => this.nestedCards(card));
   }
 
@@ -17,23 +23,22 @@ class HeroPath extends Component {
     return (
         <HeroCard
           key={card.title}
-          title={card.title}
-          type={card.type}
-          shapes={card.shape}
-          contentItems={card.content}
+          {...card}
         />
     )
   }
 
-  render(props) {
-    const containRenderNestedCards = this.renderNestedCards();
+  render() {
+    const { title } = this.props;
+    console.log(this.props)
    return (
      <div>
-      <div className="panel-heading">
-        {this.props.title}
+      <div>
+        {title}
        </div>
        <Card.Group>
-       {containRenderNestedCards}
+          {this.renderStateCards(1)}
+          {this.renderStateCards(2)}
        </Card.Group>
      </div>
    );

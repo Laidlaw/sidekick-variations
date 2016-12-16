@@ -4,7 +4,8 @@
     "payload": [{
       "title": "Overview",
       "type": "overview",
-      "shape" : "nested",
+      "priority": 2,
+      "shape" : "low",
       "description": "The Data Usage Android Hero Path can assist with the following types of issues:",
       "content": [
         {
@@ -21,6 +22,7 @@
       {
         "title": "Listed Steps",
         "type": "listed-steps",
+        "priority": 1,
         "shape" : "is-parent",
         "subtitle": "Troubleshooting (high data usage)",
         "description": "Only proceed to the next step in the list if the previous step did not resolve the issue.",
@@ -62,6 +64,8 @@
         "title": "Probing Questions",
         "description": "The below questions will help in assisting with finding the root cause to a customers issue regarding Accessibility on an Android device.",
         "shape" : "nested",
+        "type": "probing-question",
+        "priority": 1,
         "content": [
           {
             "step":"Does the touchscreen seem unresponsive?"
@@ -90,6 +94,7 @@
       "title": "Overview",
       "description": "The Accessibility for Android Hero Path can assist with the following types of issues:",
       "shape" : "is-parent",
+      "priority": 3,
       "content": [
         {
           "step":"Disabling TalkBack"
@@ -109,6 +114,7 @@
         "title": "Listed Steps",
         "description": "Only proceed to the next step in the list if the previous step did not resolve the issue.",
         "shape" : "is-parent",
+        "priority": 1,
         "tips": [
           {
             "tip": "For troubleshooting, utilize Mobile View/Rapid Remote In. If app not installed, offer assistance with installation. If unable to assist with installation of the app, remember to send a download link via text message for later installation"
@@ -135,7 +141,9 @@
       },{
           "title": "Probing Questions",
           "description": "The below questions will help in assisting with finding the root cause to a customers issue regarding Accessibility on an Android device.",
+          "type": "probing-question",
           "shape" : "is-parent",
+          "priority": 1,
           "content": [
             {
               "step":"Does the touchscreen seem unresponsive?"
