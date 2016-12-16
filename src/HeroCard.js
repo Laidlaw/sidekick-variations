@@ -32,7 +32,7 @@ const HeroCard = (props) => {
   // })
 
   return (
-    <Card>
+    <Card fluid>
       <Card.Content header={props.title} />
       <Card.Content description={heroItems} />
       <Card.Content extra>

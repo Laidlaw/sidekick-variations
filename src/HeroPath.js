@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Card } from 'semantic-ui-react';
 import HeroCard from './HeroCard';
 
 
@@ -32,7 +32,9 @@ class HeroPath extends Component {
       <div className="panel-heading">
         {this.props.title}
        </div>
+       <Card.Group>
        {containRenderNestedCards}
+       </Card.Group>
      </div>
    );
   }
