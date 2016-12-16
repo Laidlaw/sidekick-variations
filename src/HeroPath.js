@@ -13,9 +13,10 @@ class HeroPath extends Component {
 
   renderStateCards(rank) {
     return this.state.cards
-      .filter(card => card.priority <= rank)
+      .filter(card => card.priority === rank)
       .map((card) => this.nestedCards(card));
   }
+  // use sort here in the future
 
   nestedCards(card)  {
     // var nested = props.cards.filter(card => card.shape === "nested");
