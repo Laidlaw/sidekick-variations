@@ -1,0 +1,161 @@
+[
+  { "id": "1",
+    "title": "Data Usage Android",
+    "payload": [{
+      "title": "Overview",
+      "type": "overview",
+      "shape" : "nested",
+      "description": "The Data Usage Android Hero Path can assist with the following types of issues:",
+      "content": [
+        {
+          "step":"How to control data usage on one or multiple devices"
+        },
+        {
+          "step":"How to view/manage data usage"
+        },
+        {
+          "step":"High data usage"
+          }
+        ]
+      },
+      {
+        "title": "Listed Steps",
+        "type": "listed-steps",
+        "shape" : "is-parent",
+        "subtitle": "Troubleshooting (high data usage)",
+        "description": "Only proceed to the next step in the list if the previous step did not resolve the issue.",
+        "content": [
+          {
+            "step":"Connect to Wi-Fi (if available)"
+          },
+          {
+            "step":"Disable <b>Avoid Poor Connections</b> in <b>Advanced Wi-Fi</b> settings"
+          },
+          {
+            "step":"Close apps running in background"
+          },
+          {
+            "step":"Disable <b>Mobile Hotspot</b>/hotspot devices"
+          },
+          {
+            "step":"Check/adjust push notifications and account sync (i.e. email, Verizon Cloud, social media)"
+          },
+          {
+            "step":"Disable automatic Play Store downloads over mobile data"
+          },
+          {
+            "step":"Test device in Safe Mode for misbehaving apps"
+          },
+          {
+            "step":"Disable <b>Auto-sync data</b> in settings"
+          },
+          {
+            "step":"Power cycle after various changes are made"
+          },
+          {
+            "step":"Disable mobile data",
+            "note":"Note: Disable upon customer request; be sure to fully educate benefits and disadvantages of disabling mobile data"
+          }
+        ]
+      },
+      {
+        "title": "Probing Questions",
+        "description": "The below questions will help in assisting with finding the root cause to a customers issue regarding Accessibility on an Android device.",
+        "shape" : "nested",
+        "content": [
+          {
+            "step":"Does the touchscreen seem unresponsive?"
+          },{
+            "step":"Does the screen display appear normal or have enlarged/large font?"
+          },{
+            "step":"Is the device talking to you?"
+          },{
+            "step":"What is it saying?"
+          },{
+            "step":"Do you have to touch the screen twice (or more) before being able to select anything?"
+          },{
+            "step":"Have any accessibility features been enabled recently?"
+          },{
+            "step":"Does the screen display colors differently?"
+          },{
+            "step":"Do the colors on the screen look brown?"
+          }
+        ]
+      }]
+    },
+  {
+    "id": "2",
+    "title": "Accessibility Android",
+    "payload": [{
+      "title": "Overview",
+      "description": "The Accessibility for Android Hero Path can assist with the following types of issues:",
+      "shape" : "is-parent",
+      "content": [
+        {
+          "step":"Disabling TalkBack"
+        },
+        {
+          "step":"Cannot read screen due to zoomed display/enlarged font"
+        },
+        {
+          "step":"Gestures misbehaving"
+          },
+        {
+          "step":"Colors on screen different/dark"
+        }
+        ]
+      },
+      {
+        "title": "Listed Steps",
+        "description": "Only proceed to the next step in the list if the previous step did not resolve the issue.",
+        "shape" : "is-parent",
+        "tips": [
+          {
+            "tip": "For troubleshooting, utilize Mobile View/Rapid Remote In. If app not installed, offer assistance with installation. If unable to assist with installation of the app, remember to send a download link via text message for later installation"
+          },
+          {
+            "tip": "Look for this image  to indicate best instances to utilize Mobile View/Rapid Remote In"
+          }
+        ],
+        "content": [
+          {
+            "step":"Disable Talkback/Driving Mode/Zoom/Change Font Size/Disable Gestures",
+            "note":"If there is no change after disabling the feature, power cycle the device"
+          },
+          {
+            "step":"Check for software and app updates"
+          },
+          {
+            "step":"Safe mode"
+            },
+          {
+            "step":"Reset Settings (select Android devices)"
+          }
+          ]
+      },{
+          "title": "Probing Questions",
+          "description": "The below questions will help in assisting with finding the root cause to a customers issue regarding Accessibility on an Android device.",
+          "shape" : "is-parent",
+          "content": [
+            {
+              "step":"Does the touchscreen seem unresponsive?"
+            },{
+              "step":"Does the screen display appear normal or have enlarged/large font?"
+            },{
+              "step":"Is the device talking to you?"
+            },{
+              "step":"What is it saying?"
+            },{
+              "step":"Do you have to touch the screen twice (or more) before being able to select anything?"
+            },{
+              "step":"Have any accessibility features been enabled recently?"
+            },{
+              "step":"Does the screen display colors differently?"
+            },{
+              "step":"Do the colors on the screen look brown?"
+            }
+        ]
+    }
+  ]
+}
+]
