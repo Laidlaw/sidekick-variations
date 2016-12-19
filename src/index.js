@@ -4,14 +4,14 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import rootReducer from './data/rootReducer';
 import App from './App';
-import paths from 'data/HeroPathContent.json';
-// import '../node_modules/react-grid-layout/css/styles.css';
-// import '../node_modules/react-resizable/css/styles.css';
-// import './index.css';
-
+import paths from './constants/HeroPathContent.json';
 import '../node_modules/semantic-ui-css/semantic.css';
 
-const store = createStore(rootReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+const initialState = {
+  paths
+}
+
+const store = createStore(rootReducer, initialState, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 ReactDOM.render(
   <Provider store={store}>
